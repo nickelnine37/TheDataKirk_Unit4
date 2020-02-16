@@ -1,0 +1,66 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{fullpage,
+			amsfonts, 
+			amssymb, 
+			amsmath, 
+			datetime, 
+			enumitem, 
+			xcolor, 
+			url,
+			hyperref, 
+			caption, 
+			subcaption, 
+			geometry}
+			
+\geometry{a4paper,
+		  lmargin=25mm, 
+		  rmargin=25mm, 
+		  tmargin=15mm, 
+		  bmargin=15mm}			
+			
+\usepackage[utf8]{inputenc}
+\usepackage[toc, page]{appendix}
+\usepackage[pdftex]{graphicx}  
+\usepackage[round]{natbib}
+
+
+\setlength{\bibsep}{4pt}
+\bibliographystyle{apalike}
+
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = black, %Colour of internal links
+  citecolor   = blue %Colour of citations
+}
+			
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR}
+
+\parindent=0pt          %  Switch off indent of paragraphs 
+\parskip=5pt            %  Put 5pt between each paragraph  
+\Urlmuskip=0mu plus 1mu %  Better line breaks for URLs
+
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\dd}[1]{\mathrm{d}{#1}}
+\newcommand{\del}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\der}[2]{\frac{\dd{} #1}{\dd{} #2}}
+
+
+\begin{document}
+
+\section{Hello}
+
+% \newpage
+% {\small
+% \bibliography{main}       % bib file(s).
+% }
+
+% \newpage
+
+% \appendix
+% \section{Appendix}
+
+\end{document}
